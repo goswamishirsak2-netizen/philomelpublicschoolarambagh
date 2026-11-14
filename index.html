@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philomel Public School (Arambagh) | Premier International School of Excellence</title>
+  <meta name="description"
+    content="Welcome to Philomel Public School (Arambagh). An ultra-premium international school offering world-class holistic education, state-of-the-art facilities, and global learning standards.">
+  <meta name="keywords"
+    content="International School, Premier Education, CBSE, Cambridge, Admissions, Smart Classrooms, Robotics, Sports Complex, Arambagh, Hooghly">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-theme="light">
+
+  <!-- Premium Full-Screen Brand Page Transition Screen -->
+  <div class="pps-transition-screen" id="ppsTransitionScreen" aria-hidden="true">
+    <div class="pps-transition-bg"></div>
+    <div class="pps-transition-content">
+      <div class="pps-logo-glow-wrapper">
+        <div class="pps-logo-glow"></div>
+        <img src="logo.png" alt="Philomel Public School Logo" class="pps-transition-logo">
+      </div>
+      <div class="pps-transition-text">
+        <span class="pps-school-title">PHILOMEL PUBLIC SCHOOL</span>
+        <span class="pps-school-sub">(ARAMBAGH)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- FIXED TWO-LEVEL HEADER SYSTEM -->
+  <div class="header-wrapper" id="headerWrapper">
+
+    <!-- LEVEL 1: TOP ANNOUNCEMENT HEADER -->
+    <div class="top-header">
+      <div class="top-header-container">
+        <div class="top-header-left">
+          <span class="announcement-badge"><i class="fa-solid fa-bullhorn"></i> ADMISSION GOING ON</span>
+          <span class="announcement-text">Registration open for Academic Session</span>
+        </div>
+        <div class="top-header-right">
+          <a href="#admission-process" onclick="navigate('admission-process')" class="top-header-link"><i
+              class="fa-solid fa-calendar-check"></i> <span>Entrance Test Dates</span></a>
+          <a href="#downloads" onclick="navigate('downloads')" class="top-header-link"><i
+              class="fa-solid fa-download"></i> <span>Prospectus</span></a>
+          <button class="lang-btn" id="langToggle"><i class="fa-solid fa-globe"></i> ENG / <span>IN</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEVEL 2: MAIN NAVIGATION BAR -->
+    <header class="main-navbar" id="mainNavbar">
+      <div class="main-navbar-container">
+
+        <!-- Logo (Left Aligned) -->
+        <a href="#home" class="brand-logo" onclick="navigate('home')">
+          <img src="logo.png" alt="Philomel Public School (Arambagh) Logo" id="headerLogo">
+          <div class="brand-text-wrapper">
+            <span class="brand-title">PHILOMEL</span>
+            <span class="brand-subtitle">Public School (Arambagh)</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu (Centered) -->
+        <nav>
+          <ul class="nav-menu-desktop">
+            <li class="nav-item active"><a href="#home" class="nav-link" onclick="navigate('home')">Home</a></li>
+
+            <li class="nav-item has-mega">
+              <a href="#about" class="nav-link" onclick="navigate('about')">About Us <i class="fa-solid fa-chevron-down"
+                  style="font-size: 0.65rem;"></i></a>
+              <div class="mega-menu mega-menu-3col">
+                <div class="mega-column">
+                  <h4>Institution</h4>
+                  <ul class="mega-links">
+                    <li><a href="#history" onclick="navigate('history')"><i class="fa-solid fa-clock-rotate-left"></i>
+                        Legacy & History</a></li>
+                    <li><a href="#vision" onclick="navigate('vision')"><i class="fa-solid fa-eye"></i> Vision &
+                        Mission</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Leadership</h4>
+                  <ul class="mega-links">
+                    <li><a href="#chairman" onclick="navigate('chairman')"><i class="fa-solid fa-user-tie"></i>
+                        Chairman's Message</a></li>
+                    <li><a href="#principal" onclick="navigate('principal')"><i class="fa-solid fa-graduation-cap"></i>
+                        Principal's Message</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Governance</h4>
+                  <ul class="mega-links">
+                    <li><a href="#safety" onclick="navigate('safety')"><i class="fa-solid fa-shield-halved"></i> Safety
+                        & Child Care</a></li>
+                    <li><a href="#about" onclick="navigate('about')"><i class="fa-solid fa-building-columns"></i>
+                        Advisory Council</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item has-mega">
+              <a href="#academics" class="nav-link" onclick="navigate('academics')">Academics <i
+                  class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+              <div class="mega-menu mega-menu-2col">
+                <div class="mega-column">
+                  <h4>School Wings</h4>
+                  <ul class="mega-links">
+                    <li><a href="#pre-primary" onclick="navigate('pre-primary')"><i class="fa-solid fa-shapes"></i>
+                        Pre-Primary (Early Years)</a></li>
+                    <li><a href="#primary" onclick="navigate('primary')"><i class="fa-solid fa-child"></i> Primary
+                        (Grades 1-5)</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Curriculum</h4>
+                  <ul class="mega-links">
+                    <li><a href="#curriculum" onclick="navigate('curriculum')"><i
+                          class="fa-solid fa-diagram-project"></i> CBSE & Cambridge</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item has-mega">
+              <a href="#admissions" class="nav-link" onclick="navigate('admissions')">Admissions <i
+                  class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+              <div class="mega-menu mega-menu-2col">
+                <div class="mega-column">
+                  <h4>Apply</h4>
+                  <ul class="mega-links">
+                    <li><a href="javascript:void(0)" onclick="openAdmissionModal()"><i class="fa-solid fa-file-pen"></i>
+                        Online Application</a></li>
+                    <li><a href="#admission-process" onclick="navigate('admission-process')"><i
+                          class="fa-solid fa-list-check"></i> Admission Process</a></li>
+                  </ul>
+                </div>
+                <div class="mega-column">
+                  <h4>Information</h4>
+                  <ul class="mega-links">
+                    <li><a href="#faq" onclick="navigate('faq')"><i class="fa-solid fa-circle-question"></i> Admissions
+                        FAQ</a></li>
+                    <li><a href="#downloads" onclick="navigate('downloads')"><i class="fa-solid fa-file-pdf"></i>
+                        Download Prospectus</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item"><a href="#infrastructure" class="nav-link" onclick="navigate('infrastructure')">Campus
+                Life</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link" onclick="navigate('gallery')">Gallery</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" onclick="navigate('contact')">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Aligned Action Buttons & Icons -->
+        <div class="nav-actions">
+          <button class="btn-icon" onclick="openSearchModal()" title="Search site"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="btn-icon" id="themeToggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode"><i
+              class="fa-solid fa-moon"></i></button>
+          <button class="btn-icon" onclick="openERPModal()" title="Portal & ERP Login"><i
+              class="fa-solid fa-user-lock"></i></button>
+          <button class="btn-gold" onclick="openAdmissionModal()"><i class="fa-solid fa-paper-plane"></i> Apply
+            Now</button>
+
+          <!-- Hamburger Button for Mobile/Tablet -->
+          <button class="mobile-menu-btn" id="mobileMenuToggle" onclick="toggleMobileMenu()"
+            title="Open Navigation Menu">
+            <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+          </button>
+        </div>
+
+      </div>
+    </header>
+  </div>
+
+  <!-- Mobile Slide-In Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" onclick="toggleMobileMenu()"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="drawer-brand">
+        <img src="logo.png" alt="Logo" style="height:34px;">
+        <div>
+          <div style="font-family:var(--font-heading); color:#FFF; font-size:1.1rem; font-weight:700; line-height:1;">
+            PHILOMEL</div>
+          <span
+            style="font-size:0.58rem; color:var(--color-gold); letter-spacing:1.5px; text-transform:uppercase; font-weight:600;">Public
+            School (Arambagh)</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" onclick="toggleMobileMenu()" aria-label="Close Navigation Menu"><i
+          class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <!-- 1. Home -->
+      <li class="mobile-nav-item">
+        <a href="#home" class="mobile-nav-link" onclick="toggleMobileMenu(); navigate('home')">
+          <span><i class="fa-solid fa-house" style="color:var(--color-gold); margin-right:10px;"></i> Home</span>
+          <i class="fa-solid fa-chevron-right" style="font-size:0.7rem; color:var(--color-gold);"></i>
+        </a>
+      </li>
+
+      <!-- 2. About Us (Dropdown Accordion) -->
+      <li class="mobile-nav-item has-dropdown" id="mobileAboutDropdown">
+        <div class="mobile-nav-link dropdown-toggle" onclick="toggleMobileSubmenu(event, 'mobileAboutDropdown')">
+          <span><i class="fa-solid fa-building-columns" style="color:var(--color-gold); margin-right:10px;"></i> About Us</span>
+          <i class="fa-solid fa-chevron-down dropdown-arrow" style="font-size:0.75rem; color:var(--color-gold);"></i>
+        </div>
+        <ul class="mobile-sub-menu">
+          <li><a href="#about" onclick="toggleMobileMenu(); navigate('about')"><i class="fa-solid fa-landmark"></i> About School Overview</a></li>
+          <li><a href="#history" onclick="toggleMobileMenu(); navigate('history')"><i class="fa-solid fa-clock-rotate-left"></i> Legacy & History</a></li>
+          <li><a href="#vision" onclick="toggleMobileMenu(); navigate('vision')"><i class="fa-solid fa-eye"></i> Vision & Mission</a></li>
+          <li><a href="#chairman" onclick="toggleMobileMenu(); navigate('chairman')"><i class="fa-solid fa-user-tie"></i> Chairman's Message</a></li>
+          <li><a href="#principal" onclick="toggleMobileMenu(); navigate('principal')"><i class="fa-solid fa-graduation-cap"></i> Principal's Message</a></li>
+          <li><a href="#safety" onclick="toggleMobileMenu(); navigate('safety')"><i class="fa-solid fa-shield-halved"></i> Safety & Child Care</a></li>
+        </ul>
+      </li>
+
+      <!-- 3. Academics (Dropdown Accordion) -->
+      <li class="mobile-nav-item has-dropdown" id="mobileAcademicsDropdown">
+        <div class="mobile-nav-link dropdown-toggle" onclick="toggleMobileSubmenu(event, 'mobileAcademicsDropdown')">
+          <span><i class="fa-solid fa-book-open" style="color:var(--color-gold); margin-right:10px;"></i> Academics</span>
+          <i class="fa-solid fa-chevron-down dropdown-arrow" style="font-size:0.75rem; color:var(--color-gold);"></i>
+        </div>
+        <ul class="mobile-sub-menu">
+          <li><a href="#academics" onclick="toggleMobileMenu(); navigate('academics')"><i class="fa-solid fa-graduation-cap"></i> Academic Wings Overview</a></li>
+          <li><a href="#pre-primary" onclick="toggleMobileMenu(); navigate('pre-primary')"><i class="fa-solid fa-shapes"></i> Pre-Primary (Early Years)</a></li>
+          <li><a href="#primary" onclick="toggleMobileMenu(); navigate('primary')"><i class="fa-solid fa-child"></i> Primary (Grades 1-5)</a></li>
+          <li><a href="#curriculum" onclick="toggleMobileMenu(); navigate('curriculum')"><i class="fa-solid fa-diagram-project"></i> Dual Curriculum Map</a></li>
+        </ul>
+      </li>
+
+      <!-- 4. Admissions (Dropdown Accordion) -->
+      <li class="mobile-nav-item has-dropdown" id="mobileAdmissionsDropdown">
+        <div class="mobile-nav-link dropdown-toggle" onclick="toggleMobileSubmenu(event, 'mobileAdmissionsDropdown')">
+          <span><i class="fa-solid fa-file-signature" style="color:var(--color-gold); margin-right:10px;"></i> Admissions</span>
+          <i class="fa-solid fa-chevron-down dropdown-arrow" style="font-size:0.75rem; color:var(--color-gold);"></i>
+        </div>
+        <ul class="mobile-sub-menu">
+          <li><a href="#admissions" onclick="toggleMobileMenu(); navigate('admissions')"><i class="fa-solid fa-file-invoice"></i> Admissions Overview</a></li>
+          <li><a href="javascript:void(0)" onclick="toggleMobileMenu(); openAdmissionModal()"><i class="fa-solid fa-file-pen"></i> Online Application</a></li>
+          <li><a href="#admission-process" onclick="toggleMobileMenu(); navigate('admission-process')"><i class="fa-solid fa-list-check"></i> Admission Process</a></li>
+          <li><a href="#downloads" onclick="toggleMobileMenu(); navigate('downloads')"><i class="fa-solid fa-download"></i> Prospectus & Docs</a></li>
+          <li><a href="#faq" onclick="toggleMobileMenu(); navigate('faq')"><i class="fa-solid fa-circle-question"></i> Admissions FAQ</a></li>
+        </ul>
+      </li>
+
+      <!-- 5. Campus Life -->
+      <li class="mobile-nav-item">
+        <a href="#infrastructure" class="mobile-nav-link" onclick="toggleMobileMenu(); navigate('infrastructure')">
+          <span><i class="fa-solid fa-landmark" style="color:var(--color-gold); margin-right:10px;"></i> Campus Life</span>
+          <i class="fa-solid fa-chevron-right" style="font-size:0.7rem; color:var(--color-gold);"></i>
+        </a>
+      </li>
+
+      <!-- 6. Gallery -->
+      <li class="mobile-nav-item">
+        <a href="#gallery" class="mobile-nav-link" onclick="toggleMobileMenu(); navigate('gallery')">
+          <span><i class="fa-solid fa-images" style="color:var(--color-gold); margin-right:10px;"></i> Gallery</span>
+          <i class="fa-solid fa-chevron-right" style="font-size:0.7rem; color:var(--color-gold);"></i>
+        </a>
+      </li>
+
+      <!-- 7. Events -->
+      <li class="mobile-nav-item">
+        <a href="#events" class="mobile-nav-link" onclick="toggleMobileMenu(); navigate('events')">
+          <span><i class="fa-solid fa-calendar-days" style="color:var(--color-gold); margin-right:10px;"></i> Events</span>
+          <i class="fa-solid fa-chevron-right" style="font-size:0.7rem; color:var(--color-gold);"></i>
+        </a>
+      </li>
+
+      <!-- 8. Contact -->
+      <li class="mobile-nav-item">
+        <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu(); navigate('contact')">
+          <span><i class="fa-solid fa-location-dot" style="color:var(--color-gold); margin-right:10px;"></i> Contact</span>
+          <i class="fa-solid fa-chevron-right" style="font-size:0.7rem; color:var(--color-gold);"></i>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <!-- 9. Apply Now (Primary Action) -->
+      <button class="btn-gold" style="width:100%; justify-content:center; height:48px; font-weight:700;"
+        onclick="toggleMobileMenu(); openAdmissionModal()"><i class="fa-solid fa-paper-plane"></i> Apply Now</button>
+      <button class="btn-outline-white" style="width:100%; justify-content:center; height:44px;"
+        onclick="toggleMobileMenu(); openERPModal()"><i class="fa-solid fa-user-lock"></i> ERP Portal Login</button>
+      <div
+        style="display:flex; justify-content:center; gap:16px; margin-top:6px; padding-top:10px; border-top:1px solid rgba(212,175,55,0.2);">
+        <a href="tel:+919674186260" class="btn-icon" style="width:38px; height:38px; font-size:0.9rem;"
+          title="Call Us"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/918777539351" target="_blank" rel="noopener noreferrer" class="btn-icon"
+          style="width:38px; height:38px; font-size:0.95rem; color:#25D366; border-color:rgba(37,211,102,0.4);"
+          title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:ppsarambagh@gmail.com" class="btn-icon" style="width:38px; height:38px; font-size:0.9rem;"
+          title="Email Us"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Main View Container (Dynamic SPA Routing Target) -->
+  <main id="app-root">
+    <!-- View content loaded via app.js -->
+  </main>
+
+  <!-- Modal 1: Multi-Step Online Admission Wizard -->
+  <div class="modal-overlay" id="admissionModal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeAdmissionModal()"><i class="fa-solid fa-xmark"></i></button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span
+          style="color:var(--color-gold); font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.8rem;">Admissions
+          2026-27</span>
+        <h2 style="font-family:var(--font-heading); color:var(--text-main); font-size:2rem; margin-top:4px;">Online
+          Admission Application</h2>
+      </div>
+
+      <!-- Wizard Steps Header -->
+      <div class="wizard-steps">
+        <div class="step-item active" id="stepIndicator1">
+          <div class="step-number">1</div>
+          <span class="step-label">Student Info</span>
+        </div>
+        <div class="step-item" id="stepIndicator2">
+          <div class="step-number">2</div>
+          <span class="step-label">Parent Details</span>
+        </div>
+        <div class="step-item" id="stepIndicator3">
+          <div class="step-number">3</div>
+          <span class="step-label">Academic Grade</span>
+        </div>
+        <div class="step-item" id="stepIndicator4">
+          <div class="step-number">4</div>
+          <span class="step-label">Review & Submit</span>
+        </div>
+      </div>
+
+      <!-- Form Steps Container -->
+      <form id="admissionWizardForm" onsubmit="handleAdmissionSubmit(event)">
+        <!-- Step 1 -->
+        <div class="wizard-step-content" id="step1">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">First Name *</label>
+              <input type="text" class="form-input" id="admFirstName" placeholder="e.g. Aarav" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name *</label>
+              <input type="text" class="form-input" id="admLastName" placeholder="e.g. Sharma" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Date of Birth *</label>
+              <input type="date" class="form-input" id="admDob" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Gender *</label>
+              <select class="form-select" id="admGender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:flex; justify-content:flex-end; margin-top:24px;">
+            <button type="button" class="btn-gold" onclick="nextStep(2)">Next Step <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="wizard-step-content" id="step2" style="display:none;">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Parent / Guardian Name *</label>
+              <input type="text" class="form-input" id="admParentName" placeholder="e.g. Rajesh Sharma" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Primary Mobile Number *</label>
+              <input type="tel" class="form-input" id="admPhone" placeholder="+91 9674186260" required>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Email Address *</label>
+              <input type="email" class="form-input" id="admEmail" placeholder="parent@example.com" required>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Residential Address</label>
+              <textarea class="form-textarea" id="admAddress" rows="2"
+                placeholder="Full residential street address"></textarea>
+            </div>
+          </div>
+          <div style="display:flex; justify-content:space-between; margin-top:24px;">
+            <button type="button" class="btn-primary-dark" onclick="nextStep(1)"><i class="fa-solid fa-arrow-left"></i>
+              Previous</button>
+            <button type="button" class="btn-gold" onclick="nextStep(3)">Next Step <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="wizard-step-content" id="step3" style="display:none;">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Applying for Grade *</label>
+              <select class="form-select" id="admGrade" required>
+                <option value="">Select Target Class</option>
+                <option value="Nursery">Nursery / KG (Pre-Primary)</option>
+                <option value="Grade 1-5">Primary (Grades 1 to 5)</option>
+                <option value="Grade 6-8">Middle School (Grades 6 to 8)</option>
+                <option value="Grade 9-10">Secondary (Grades 9 & 10)</option>
+                <option value="Grade 11-12 Science">Sr. Secondary - Science</option>
+                <option value="Grade 11-12 Commerce">Sr. Secondary - Commerce</option>
+                <option value="Grade 11-12 Humanities">Sr. Secondary - Humanities</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Previous School Attended</label>
+              <input type="text" class="form-input" id="admPrevSchool" placeholder="Name of former institution">
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Transport Facility Needed?</label>
+              <select class="form-select" id="admTransport">
+                <option value="Yes">Yes, require school bus service</option>
+                <option value="No">No, self arrangement</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:flex; justify-content:space-between; margin-top:24px;">
+            <button type="button" class="btn-primary-dark" onclick="nextStep(2)"><i class="fa-solid fa-arrow-left"></i>
+              Previous</button>
+            <button type="button" class="btn-gold" onclick="nextStep(4)">Review Application <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="wizard-step-content" id="step4" style="display:none;">
+          <div
+            style="background:var(--bg-surface); padding:20px; border-radius:var(--radius-md); border:1px solid var(--border-color); margin-bottom:24px;">
+            <h4 style="font-family:var(--font-heading); color:var(--color-primary); margin-bottom:12px;">Confirm Details
+            </h4>
+            <p style="font-size:0.9rem; color:var(--text-muted);" id="summaryReviewText">Checking applicant details...
+            </p>
+          </div>
+          <div style="display:flex; justify-content:space-between;">
+            <button type="button" class="btn-primary-dark" onclick="nextStep(3)"><i class="fa-solid fa-arrow-left"></i>
+              Edit Details</button>
+            <button type="submit" class="btn-gold"><i class="fa-solid fa-check-circle"></i> Submit Application & Pay
+              Registration Fee</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Modal 3: ERP / Portal Login Modal -->
+  <div class="modal-overlay" id="erpModal">
+    <div class="modal-container" style="max-width: 500px;">
+      <button class="modal-close" onclick="closeERPModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div style="text-align: center; margin-bottom: 24px;">
+        <i class="fa-solid fa-building-columns" style="font-size: 2.5rem; color: var(--color-gold);"></i>
+        <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.8rem; margin-top: 10px;">
+          Enterprise ERP Portal</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted);">Secure Gateway for Students, Parents & Staff</p>
+      </div>
+
+      <div style="display: flex; gap: 10px; margin-bottom: 24px;">
+        <button class="filter-btn active" style="flex:1;" id="roleStudentBtn" onclick="selectRole('student')"><i
+            class="fa-solid fa-user-graduate"></i> Student</button>
+        <button class="filter-btn" style="flex:1;" id="roleParentBtn" onclick="selectRole('parent')"><i
+            class="fa-solid fa-users"></i> Parent</button>
+        <button class="filter-btn" style="flex:1;" id="roleTeacherBtn" onclick="selectRole('teacher')"><i
+            class="fa-solid fa-chalkboard-user"></i> Teacher</button>
+      </div>
+
+      <form onsubmit="handleERPLogin(event)">
+        <div class="form-group" style="margin-bottom: 16px;">
+          <label class="form-label">User Identifier / Registration No.</label>
+          <input type="text" class="form-input" id="erpUserId" placeholder="e.g. PPS-2026-8891" value="PPS-2026-8891"
+            required>
+        </div>
+        <div class="form-group" style="margin-bottom: 24px;">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-input" id="erpPass" value="••••••••" required>
+        </div>
+        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center;"><i
+            class="fa-solid fa-right-to-bracket"></i> Authenticate & Enter Dashboard</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 4: Global Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="modal-close" onclick="closeSearchModal()"
+      style="position:absolute; top:30px; right:30px; color:#FFF;"><i class="fa-solid fa-xmark"></i></button>
+    <div class="search-box">
+      <input type="text" class="search-input" id="globalSearchInput"
+        placeholder="Search curriculum, fees, faculty, facilities..." oninput="handleLiveSearch(this.value)">
+      <div class="search-results" id="globalSearchResults">
+        <!-- Live search results appended here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Sticky Action Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/918777539351?text=Hey!%20Can%20I%20get%20more%20info%20on%20this%3F" target="_blank"
+      rel="noopener noreferrer" class="float-btn float-whatsapp" title="Chat on WhatsApp"><i
+        class="fa-brands fa-whatsapp"></i></a>
+    <button class="float-btn float-top" id="backToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})"
+      title="Back to Top"><i class="fa-solid fa-chevron-up"></i></button>
+  </div>
+
+  <!-- Cookie Consent Bar -->
+  <div class="cookie-consent" id="cookieConsent" style="display: flex;">
+    <div style="display: flex; gap: 12px; align-items: flex-start;">
+      <i class="fa-solid fa-cookie-bite" style="font-size: 1.5rem; color: var(--color-gold);"></i>
+      <div>
+        <h5 style="font-weight: 600; margin-bottom: 4px;">Cookie & Privacy Notice</h5>
+        <p style="font-size: 0.82rem; color: rgba(255,255,255,0.8);">We use privacy-preserving cookies to enhance
+          navigation experience and deliver customized learning portal features.</p>
+      </div>
+    </div>
+    <div style="display: flex; gap: 10px; justify-content: flex-end;">
+      <button class="btn-gold" style="padding: 6px 16px; font-size: 0.8rem;" onclick="acceptCookies()">Accept
+        All</button>
+    </div>
+  </div>
+
+  <!-- Premium Footer -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+            <img src="logo.png" alt="Logo" style="height:48px;">
+            <div>
+              <h3 style="font-family:var(--font-heading); color:#FFF; font-size:1.3rem; margin:0; padding:0;">PHILOMEL
+                PUBLIC SCHOOL (Arambagh)</h3>
+              <span
+                style="color:var(--color-gold); font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; font-weight:600;">International
+                School of Excellence</span>
+            </div>
+          </div>
+          <p style="font-size:0.9rem; color:rgba(255,255,255,0.7); line-height:1.7; margin-bottom:20px;">
+            Nurturing global leaders through academic brilliance, ethical integrity, cutting-edge innovation, and
+            holistic athletic development.
+          </p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="https://www.facebook.com/share/1F5UBjGseL/" target="_blank" rel="noopener noreferrer"
+              class="btn-icon" style="width:36px; height:36px; font-size:0.9rem;" title="Facebook"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/philomelpublicschool?igsh=MXJ3bHRoZmFxbnpobA==" target="_blank"
+              rel="noopener noreferrer" class="btn-icon" style="width:36px; height:36px; font-size:0.9rem;"
+              title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@PhilomelPublicSchoolArambagh" target="_blank" rel="noopener noreferrer"
+              class="btn-icon" style="width:36px; height:36px; font-size:0.9rem;" title="YouTube"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:ppsarambagh@gmail.com" class="btn-icon" style="width:36px; height:36px; font-size:0.9rem;"
+              title="Email Us"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#about" onclick="navigate('about')">About School</a></li>
+            <li><a href="#history" onclick="navigate('history')">Our Legacy</a></li>
+            <li><a href="#academics" onclick="navigate('academics')">Academic Wings</a></li>
+            <li><a href="#admissions" onclick="navigate('admissions')">Admission 2026-27</a></li>
+            <li><a href="#admission-process" onclick="navigate('admission-process')">Admission Process</a></li>
+          </ul>
+        </div>
+
+        <!-- Campus Life -->
+        <div class="footer-col">
+          <h3>Campus Life</h3>
+          <ul class="footer-links">
+            <li><a href="#infrastructure" onclick="navigate('infrastructure')">Smart Infrastructure</a></li>
+            <li><a href="#sports" onclick="navigate('sports')">Sports Arena</a></li>
+            <li><a href="#gallery" onclick="navigate('gallery')">Media Gallery</a></li>
+            <li><a href="#careers" onclick="navigate('careers')">Careers & Jobs</a></li>
+            <li><a href="#alumni" onclick="navigate('alumni')">Alumni Network</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Location -->
+        <div class="footer-col">
+          <h3>Contact & Location</h3>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.85); display:flex; flex-direction:column; gap:12px;">
+            <p style="margin:0;">
+              <i class="fa-solid fa-school" style="color:var(--color-gold); margin-right:8px;"></i>
+              <strong style="color:#FFF;">PHILOMEL PUBLIC SCHOOL (Arambagh)</strong>
+            </p>
+            <p style="margin:0; padding-left:22px; line-height:1.5;">
+              <i class="fa-solid fa-location-dot"
+                style="color:var(--color-gold); margin-left:-22px; margin-right:8px;"></i> 682, Link Road, Near Arambagh
+              Court<br>
+              Talar Par P.O – Arambagh, Dist – Hooghly<br>
+              Pin – 712601<br>
+              <span style="color:var(--color-gold); font-size:0.85rem; display:inline-block; margin-top:3px;"><i
+                  class="fa-solid fa-compass" style="margin-right:4px;"></i> Landmark: Dr. Gangi Babu's Nursing
+                Home</span>
+            </p>
+            <p style="margin:0;"><i class="fa-solid fa-phone" style="color:var(--color-gold); margin-right:8px;"></i>
+              +91 9674186260 / +91 8777539351</p>
+            <p style="margin:0;"><i class="fa-solid fa-envelope" style="color:var(--color-gold); margin-right:8px;"></i>
+              ppsarambagh@gmail.com</p>
+            <p style="margin:0;"><i class="fa-solid fa-clock" style="color:var(--color-gold); margin-right:8px;"></i>
+              Mon - Fri: 10:00 AM - 3:00 PM (Sat & Sun Closed)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright & Policies -->
+      <div class="footer-bottom">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+          <span>© 2026 Philomel Public School (Arambagh). All Rights Reserved. Designed to International Excellence
+            Standards.</span>
+          <div style="display:flex; gap:20px;">
+            <a href="#privacy" onclick="navigate('privacy')"
+              style="color:rgba(255,255,255,0.6); text-decoration:none;">Privacy Policy</a>
+            <a href="#terms" onclick="navigate('terms')"
+              style="color:rgba(255,255,255,0.6); text-decoration:none;">Terms of Service</a>
+            <a href="#sitemap" onclick="navigate('sitemap')"
+              style="color:rgba(255,255,255,0.6); text-decoration:none;">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
